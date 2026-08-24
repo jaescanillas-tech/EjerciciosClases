@@ -1,6 +1,6 @@
 package Semana3;
 
-public class Moto extends Vehiculo implements TocableBocina
+public class Moto extends Vehiculo implements TocableBocina, EmergencyLight
 {
     private boolean tieneParabrisas;
     public Moto(String marca, String modelo, int
@@ -21,5 +21,20 @@ public class Moto extends Vehiculo implements TocableBocina
     @Override
     public void tocarBocina() {
         System.out.println("Bocina de la moto: bip bip.");
+    }
+
+    @Override
+    public boolean hasEmergencyLight() {
+        return this.hasEmergencyLight();
+    }
+
+    @Override
+    public void onEmergencyLight() {
+
+    }
+
+    @Override
+    public void offEmergencyLight() {
+
     }
 }

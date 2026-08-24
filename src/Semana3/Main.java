@@ -1,12 +1,12 @@
 package Semana3;
 
 public class Main {
-    public static void main(String[] args) {Vehiculo v1 = new Auto("Toyota", "Corolla", 180, 4);
-    Vehiculo v2 = new Moto("Yamaha", "FZ", 140, true);
-
-    v1.mostrarDatos();
-    v1.desplazarse();
-    v2.mostrarDatos();
-    v2.desplazarse();
-    }
+   public static void main(String[] args) {
+       Vehiculo[] vehiculos = {
+               new Auto("Toyota", "varis", 170, 4),
+               new Moto("Yamaha","125",180, true),
+               new Moto("Benz","125",180, true),
+               new Bicicleta("bici", "1", 25, false)
+       }
+   }
 }

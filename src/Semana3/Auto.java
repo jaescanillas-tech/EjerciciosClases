@@ -1,6 +1,6 @@
 package Semana3;
 
-public class Auto extends Vehiculo implements TocableBocina
+public class Auto extends Vehiculo implements TocableBocina, EmergencyLight
 {
     private int cantidadPuertas;
     public Auto(String marca, String modelo, int
@@ -20,5 +20,20 @@ public class Auto extends Vehiculo implements TocableBocina
     @Override
     public void tocarBocina() {
         System.out.println("Bocina del auto: pi pi.");
+    }
+
+    @Override
+    public boolean hasEmergencyLight() {
+        return this.hasEmergencyLight;
+    }
+
+    @Override
+    public void onEmergencyLight() {
+        System.out.println("El auto enciende las luces de emergencia");
+    }
+
+    @Override
+    public void offEmergencyLight(){
+        System.out.println("El auto apaga las luces de emergencia");
     }
 }
