@@ -1,4 +1,4 @@
-package Semana3;
+package Semana3.clase1;
 
 public class Moto extends Vehiculo implements TocableBocina, EmergencyLight
 {

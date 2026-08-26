@@ -1,4 +1,4 @@
-package Semana3;
+package Semana3.clase1;
 
 public class Bicicleta extends Vehiculo implements TocableCampana {
 

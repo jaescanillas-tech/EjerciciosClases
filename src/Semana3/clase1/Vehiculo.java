@@ -1,4 +1,4 @@
-package Semana3;
+package Semana3.clase1;
 
 public abstract class Vehiculo {
     protected String marca;
