@@ -56,4 +56,5 @@ public class Categorialibro {
     public void removeLibro(Libro libro){
         this.libros.remove(libro);
     }
+
 }
